@@ -5,8 +5,8 @@ import chatVideo from "@/assets/chat.mp4";
 import decisionTreeVideo from "@/assets/decisiontree.mp4";
 import evalVideo from "@/assets/eval.mp4";
 const IntroducingSection = () => (
-  <section id="introducing" className="py-24 md:py-32 relative z-10">
-    <div className="container">
+  <section id="introducing" className="py-16 sm:py-24 md:py-32 relative z-10">
+    <div className="container min-w-0">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-8">
           <SectionLabel>Introducing Aql</SectionLabel>
@@ -46,17 +46,17 @@ const HowItWorksSection = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-24 md:py-32 relative z-10 border-t border-border">
-      <div className="container">
-        <div className="max-w-2xl mx-auto text-center mb-16">
+    <section id="how-it-works" className="py-16 sm:py-24 md:py-32 relative z-10 border-t border-border">
+      <div className="container min-w-0">
+        <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-16">
           <SectionLabel>How it works</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
             Four steps to clarity
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">
           {steps.map((step) => (
-            <div key={step.num} className="relative p-6 rounded-xl border border-border bg-card group hover:border-primary/30 transition-colors">
+            <div key={step.num} className="relative p-4 sm:p-6 rounded-xl border border-border bg-card group hover:border-primary/30 transition-colors">
               <span className="text-xs font-mono text-primary mb-4 block">{step.num}</span>
               <step.icon className="h-5 w-5 text-muted-foreground mb-3 group-hover:text-primary transition-colors" />
               <h3 className="text-sm font-semibold text-foreground mb-2">{step.title}</h3>
@@ -82,11 +82,11 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" className="py-24 md:py-32 relative z-10">
-      <div className="container">
-        <div className="max-w-2xl mx-auto text-center mb-16">
+    <section id="features" className="py-16 sm:py-24 md:py-32 relative z-10">
+      <div className="container min-w-0">
+        <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-16">
           <SectionLabel>Features</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
             Built for strategic thinking
           </h2>
         </div>
@@ -98,7 +98,7 @@ const FeaturesSection = () => {
               return (
                 <div
                   key={f.title}
-                  className={`rounded-xl border bg-card transition-all overflow-hidden w-full cursor-pointer p-6 md:p-8 ${
+                  className={`rounded-xl border bg-card transition-all overflow-hidden w-full max-w-full cursor-pointer p-4 sm:p-6 md:p-8 touch-manipulation ${
                     isExpanded ? "border-primary/40 ring-1 ring-primary/20" : "border-border hover:border-primary/30 md:min-h-0"
                   }`}
                   onClick={() => setExpandedIndex(isExpanded ? null : i)}

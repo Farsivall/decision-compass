@@ -9,7 +9,7 @@ import StatsSection from "@/components/StatsSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background relative">
+    <div className="min-h-screen bg-background relative overflow-x-hidden">
       <GradientBlobs />
       <BackgroundCards />
       <div className="relative z-10">

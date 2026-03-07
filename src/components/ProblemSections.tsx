@@ -10,19 +10,19 @@ const SectionLabel = ({ children }: { children: React.ReactNode }) => (
 );
 
 const WhyNowSection = () => (
-  <section className="py-24 md:py-32 relative z-10">
-    <div className="container">
-      <div className="max-w-2xl mx-auto text-center mb-12">
+  <section className="py-16 sm:py-24 md:py-32 relative z-10">
+    <div className="container min-w-0">
+      <div className="max-w-2xl mx-auto text-center mb-8 sm:mb-12">
         <SectionLabel>Why now</SectionLabel>
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
           Decision complexity has exploded
         </h2>
-        <p className="text-muted-foreground text-lg leading-relaxed">
+        <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
           Modern decisions require expertise across many domains — technical risk, regulatory exposure, financial uncertainty, operational trade-offs. But companies still rely on meetings and documents.
         </p>
       </div>
-      <div className="flex justify-center mt-10">
-        <div className="p-8 rounded-2xl border border-border bg-card/50">
+      <div className="flex justify-center mt-8 sm:mt-10 overflow-x-auto">
+        <div className="p-4 sm:p-8 rounded-2xl border border-border bg-card/50 min-w-0">
           <ComplexityGraphic />
         </div>
       </div>
@@ -39,14 +39,14 @@ const problemPersonas = [
 ];
 
 const ProblemSection = () => (
-  <section id="problem" className="py-24 md:py-32 relative z-10">
-    <div className="container">
-      <div className="max-w-2xl mx-auto text-center mb-12">
+  <section id="problem" className="py-16 sm:py-24 md:py-32 relative z-10">
+    <div className="container min-w-0">
+      <div className="max-w-2xl mx-auto text-center mb-8 sm:mb-12">
         <SectionLabel>The problem</SectionLabel>
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
           Important decisions are broken
         </h2>
-        <p className="text-muted-foreground text-lg leading-relaxed mb-10">
+        <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 sm:mb-10">
           Trade-offs remain hidden. Teams argue opinions instead of structured reasoning. Analysis lives across scattered tools.
         </p>
       </div>
@@ -115,20 +115,20 @@ const costStats = [
 ];
 
 const CostSection = () => (
-  <section id="cost" className="py-24 md:py-32 relative z-10">
-    <div className="container">
-      <div className="max-w-2xl mx-auto text-center mb-12">
+  <section id="cost" className="py-16 sm:py-24 md:py-32 relative z-10">
+    <div className="container min-w-0">
+      <div className="max-w-2xl mx-auto text-center mb-8 sm:mb-12">
         <SectionLabel>The cost</SectionLabel>
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
           The cost of bad decisions
         </h2>
-        <p className="text-muted-foreground text-lg leading-relaxed mb-12">
+        <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 sm:mb-12">
           Failed launches. Strategy mistakes. Legal exposure. Technical debt. Lost market timing. Even with months of analysis, companies still move forward with uncertainty.
         </p>
       </div>
 
-      <div className="max-w-2xl mx-auto mb-8">
-        <div className="rounded-xl border border-border bg-card p-4 md:p-6 text-muted-foreground">
+      <div className="max-w-2xl mx-auto mb-8 overflow-x-auto">
+        <div className="rounded-xl border border-border bg-card p-4 md:p-6 text-muted-foreground min-w-0">
           <CostScatterAnimated />
           <p className="text-center text-xs text-muted-foreground mt-2">
             Impact vs scale of cost across key metrics
@@ -161,11 +161,11 @@ const CostSection = () => (
 );
 
 const ToolsFailSection = () => (
-  <section className="py-24 md:py-32 relative z-10 border-t border-border">
-    <div className="container">
-      <div className="max-w-2xl mx-auto text-center mb-10">
+  <section className="py-16 sm:py-24 md:py-32 relative z-10 border-t border-border">
+    <div className="container min-w-0">
+      <div className="max-w-2xl mx-auto text-center mb-8 sm:mb-10">
         <SectionLabel>Why current tools fail</SectionLabel>
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
           Chatbots generate answers.
           <br />
           <span className="text-muted-foreground">Decisions require reasoning.</span>

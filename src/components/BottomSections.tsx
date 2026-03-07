@@ -60,17 +60,17 @@ const WhoSection = () => {
   };
 
   return (
-    <section id="who" className="py-24 md:py-32 relative z-10 border-t border-border overflow-hidden">
-      <div className="container relative">
+    <section id="who" className="py-16 sm:py-24 md:py-32 relative z-10 border-t border-border overflow-hidden">
+      <div className="container relative min-w-0">
         {/* Background accent - soft arc */}
         <div className="absolute inset-0 pointer-events-none flex justify-center -top-24">
           <div className="w-[min(100%,600px)] h-64 rounded-full bg-primary/5 blur-3xl" />
         </div>
 
         <div className="relative max-w-4xl mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 sm:mb-14">
             <SectionLabel>Who it's for</SectionLabel>
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground max-w-2xl mx-auto leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-foreground max-w-2xl mx-auto leading-tight">
               For people who make high-stakes decisions
             </h2>
             <p className="text-muted-foreground mt-4 max-w-lg mx-auto text-sm">
@@ -121,14 +121,14 @@ const WhoSection = () => {
 };
 
 const VisionSection = () => (
-  <section className="py-24 md:py-32 relative z-10 border-t border-border">
-    <div className="container">
+  <section className="py-16 sm:py-24 md:py-32 relative z-10 border-t border-border">
+    <div className="container min-w-0">
       <div className="max-w-2xl mx-auto text-center">
         <SectionLabel>Vision</SectionLabel>
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
           The future of decision-making
         </h2>
-        <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+        <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
           Decisions should not rely on fragmented expertise. They should be structured, transparent, and explorable. Aql recommends; you decide and branch out. We aim to become the operating system for strategic decisions.
         </p>
       </div>
@@ -183,16 +183,16 @@ const CTASection = () => {
   };
 
   return (
-    <section id="cta" className="py-24 md:py-32 relative z-10">
-      <div className="container">
-        <div className="max-w-2xl mx-auto p-12 rounded-2xl border border-primary/20 bg-primary/5">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
+    <section id="cta" className="py-16 sm:py-24 md:py-32 relative z-10">
+      <div className="container min-w-0">
+        <div className="max-w-2xl mx-auto p-6 sm:p-8 md:p-12 rounded-2xl border border-primary/20 bg-primary/5">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
             Make your next decision with clarity.
           </h2>
-          <p className="text-muted-foreground mb-8 text-center">
+          <p className="text-muted-foreground mb-6 sm:mb-8 text-center text-sm sm:text-base">
             Get recommendations from five specialists — then make your own decision, branch out, or follow a suggested path. You decide; Aql supports.
           </p>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-sm mx-auto">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-sm mx-auto">
             <div className="space-y-2">
               <Label htmlFor="waitlist-email">Email</Label>
               <Input
@@ -221,7 +221,7 @@ const CTASection = () => {
                 </SelectContent>
               </Select>
             </div>
-            <Button type="submit" variant="hero" size="xl" disabled={loading} className="mt-2">
+            <Button type="submit" variant="hero" size="xl" disabled={loading} className="mt-2 touch-manipulation min-h-[48px] w-full sm:w-auto">
               {loading ? "Adding…" : "Join the waitlist"} <ArrowRight className="h-4 w-4" />
             </Button>
           </form>

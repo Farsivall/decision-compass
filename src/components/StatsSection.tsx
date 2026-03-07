@@ -37,15 +37,15 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <section className="py-24 md:py-32 relative z-10 border-t border-border">
-      <div className="container">
-        <div className="max-w-2xl mx-auto text-center mb-10">
+    <section className="py-16 sm:py-24 md:py-32 relative z-10 border-t border-border">
+      <div className="container min-w-0">
+        <div className="max-w-2xl mx-auto text-center mb-8 sm:mb-10">
           <SectionLabel>By the numbers</SectionLabel>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
             Built for multi-perspective decisions
           </h2>
         </div>
-        <div className="rounded-xl border border-border bg-card overflow-hidden max-w-3xl mx-auto mb-12">
+        <div className="rounded-xl border border-border bg-card overflow-hidden max-w-3xl mx-auto mb-8 sm:mb-12">
           <video
             src={personaVideo}
             className="w-full aspect-video object-cover"
@@ -55,11 +55,11 @@ const StatsSection = () => {
             autoPlay
           />
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto">
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="p-6 rounded-xl border border-border bg-card group hover:border-primary/30 transition-colors"
+              className="p-4 sm:p-6 rounded-xl border border-border bg-card group hover:border-primary/30 transition-colors"
             >
               <stat.icon className="h-5 w-5 text-muted-foreground mb-3 group-hover:text-primary transition-colors" />
               <div className="text-2xl md:text-3xl font-bold text-foreground tabular-nums">
