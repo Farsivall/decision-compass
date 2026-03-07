@@ -20,8 +20,10 @@ const HeroSection = () => {
             Aql uses your company’s context and domain-specific knowledge to simulate how legal, financial, technical, tax, and business experts evaluate your decision. Get recommendations and suggested paths — then make your own decision, branch out, or follow the path you choose.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-300">
-            <Button variant="hero" size="xl">
-              Start a project <ArrowRight className="h-4 w-4" />
+            <Button variant="hero" size="xl" asChild>
+              <a href="#cta">
+                Sign up for the waitlist <ArrowRight className="h-4 w-4" />
+              </a>
             </Button>
           </div>
         </div>

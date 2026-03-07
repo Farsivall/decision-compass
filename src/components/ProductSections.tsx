@@ -21,7 +21,7 @@ const IntroducingSection = () => (
           <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl mx-auto mb-4">
             The AI recommends; you decide. Create your own branches, explore alternatives, or take the suggested path — the decision is always yours.
           </p>
-          <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl mx-auto mb-8">
+          <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto mb-8">
             Aql uncovers risks, surfaces tradeoffs across departments, and shows where the specialists align — so you see the full picture and the consensus in one place.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-w-xl mx-auto">
