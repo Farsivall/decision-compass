@@ -17,14 +17,11 @@ const HeroSection = () => {
             <span className="text-primary">One decision.</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up animation-delay-200 leading-relaxed text-balance">
-            Aql simulates how legal, financial, technical, tax, and business experts evaluate your decision — and turns it into clear paths forward.
+            Aql uses your company’s context and domain-specific knowledge to simulate how legal, financial, technical, tax, and business experts evaluate your decision. Get recommendations and suggested paths — then make your own decision, branch out, or follow the path you choose.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-300">
             <Button variant="hero" size="xl">
               Start a project <ArrowRight className="h-4 w-4" />
-            </Button>
-            <Button variant="hero-secondary" size="xl">
-              See an example decision
             </Button>
           </div>
         </div>

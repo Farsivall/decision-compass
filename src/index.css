@@ -107,6 +107,15 @@
 .animation-delay-400 { animation-delay: 0.4s; }
 .animation-delay-500 { animation-delay: 0.5s; }
 
+@keyframes nav-slide-in {
+  0% { opacity: 0; transform: translateY(-16px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-nav-in {
+  animation: nav-slide-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
 /* Grid pattern */
 .bg-grid {
   background-image: 

@@ -1,28 +1,33 @@
 import Navbar from "@/components/Navbar";
 import GradientBlobs from "@/components/GradientBlobs";
+import BackgroundCards from "@/components/BackgroundCards";
 import HeroSection from "@/components/HeroSection";
 import { WhyNowSection, ProblemSection, CostSection, ToolsFailSection } from "@/components/ProblemSections";
 import { IntroducingSection, HowItWorksSection, FeaturesSection } from "@/components/ProductSections";
-import { ExampleSection, WhoSection, VisionSection, CTASection, Footer } from "@/components/BottomSections";
+import { WhoSection, VisionSection, CTASection, Footer } from "@/components/BottomSections";
+import StatsSection from "@/components/StatsSection";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative">
       <GradientBlobs />
-      <Navbar />
+      <BackgroundCards />
+      <div className="relative z-10">
+        <Navbar />
       <HeroSection />
       <WhyNowSection />
       <ProblemSection />
+      <WhoSection />
       <CostSection />
       <ToolsFailSection />
       <IntroducingSection />
+      <StatsSection />
       <HowItWorksSection />
       <FeaturesSection />
-      <ExampleSection />
-      <WhoSection />
       <VisionSection />
       <CTASection />
       <Footer />
+      </div>
     </div>
   );
 };

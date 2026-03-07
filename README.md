@@ -62,7 +62,16 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+**Vercel** (recommended)
+
+1. Push this repo to GitHub and import the project in [Vercel](https://vercel.com).
+2. In the project’s **Settings → Environment Variables**, add:
+   - `VITE_SUPABASE_URL` — your Supabase project URL
+   - `VITE_SUPABASE_ANON_KEY` — your Supabase anon (publishable) key  
+   (See `.env.example` for the format.)
+3. Deploy. The waitlist form will write to your Supabase `waitlist` table.
+
+You can also open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click Share → Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 
