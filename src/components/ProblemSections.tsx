@@ -1,4 +1,4 @@
-import { AlertTriangle, Clock, Layers, Zap, DollarSign, Calendar, TrendingDown } from "lucide-react";
+import { Clock, Layers, DollarSign, Calendar } from "lucide-react";
 import { CountUp } from "./CountUp";
 import { AnimatedBar } from "./AnimatedBar";
 import ComplexityGraphic from "./ComplexityGraphic";
@@ -15,10 +15,10 @@ const WhyNowSection = () => (
       <div className="max-w-2xl mx-auto text-center mb-8 sm:mb-12">
         <SectionLabel>Why now</SectionLabel>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
-          Decision complexity has exploded
+          Companies spend weeks debating before committing
         </h2>
         <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
-          Modern decisions require expertise across many domains — technical risk, regulatory exposure, financial uncertainty, operational trade-offs. But companies still rely on meetings and documents.
+          High-stakes decisions need many perspectives — technical risk, regulatory exposure, financial impact, operational trade-offs. Today that means endless meetings, scattered expertise, or expensive consultants just to evaluate whether something is worth pursuing.
         </p>
       </div>
       <div className="flex justify-center mt-8 sm:mt-10 overflow-x-auto">
@@ -44,10 +44,10 @@ const ProblemSection = () => (
       <div className="max-w-2xl mx-auto text-center mb-8 sm:mb-12">
         <SectionLabel>The problem</SectionLabel>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
-          Important decisions are broken
+          Early evaluation means meetings, scattered expertise, and expensive consulting
         </h2>
         <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 sm:mb-10">
-          Trade-offs remain hidden. Teams argue opinions instead of structured reasoning. Analysis lives across scattered tools.
+          Teams debate for weeks. Many hire consultants just to decide if an idea is worth exploring. Trade-offs stay hidden; expertise is fragmented across legal, financial, technical, and tax — with no structure.
         </p>
       </div>
       <div className="max-w-2xl mx-auto mb-12">
@@ -71,10 +71,10 @@ const ProblemSection = () => (
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
         {[
-          { icon: AlertTriangle, text: "Trade-offs unclear" },
+          { icon: Calendar, text: "Weeks of meetings" },
           { icon: Layers, text: "Expertise fragmented" },
-          { icon: Zap, text: "Analysis scattered" },
-          { icon: Clock, text: "Decisions slow" },
+          { icon: DollarSign, text: "Expensive early consulting" },
+          { icon: Clock, text: "Slow to commit or kill" },
         ].map((item) => (
           <div key={item.text} className="flex flex-col items-center gap-3 p-6 rounded-xl border border-border bg-card">
             <item.icon className="h-5 w-5 text-muted-foreground" />
@@ -86,31 +86,33 @@ const ProblemSection = () => (
   </section>
 );
 
+// Real statistics: meeting waste (MeetingToll/Yaware $37B), exec meeting time (Fellow), unproductive meetings (71% - Insights for Professionals), decision latency (60% - AgileIG), strategy/feasibility cost (Futurists/OGSCapital/McKinsey pricing)
 const costStats = [
   {
     icon: DollarSign,
-    value: 122,
+    value: 37,
     prefix: "$",
     suffix: "B",
-    label: "Lost annually to failed strategic decisions",
+    label: "Lost annually to unproductive meetings (US)",
+  },
+  {
+    icon: DollarSign,
+    value: 100,
+    prefix: "$",
+    suffix: "K+",
+    label: "Per strategy or feasibility evaluation (consulting)",
   },
   {
     icon: Calendar,
-    value: 40,
-    suffix: "+",
-    label: "Hours spent in meetings per major decision",
-  },
-  {
-    icon: TrendingDown,
-    value: 67,
+    value: 71,
     suffix: "%",
-    label: "Of strategic initiatives that underperform or fail",
+    label: "Of meetings considered unproductive",
   },
   {
     icon: Clock,
-    value: 6,
-    suffix: "+ mo",
-    label: "Average delay from analysis paralysis",
+    value: 60,
+    suffix: "%",
+    label: "Of project delays from decision latency",
   },
 ];
 
@@ -120,10 +122,10 @@ const CostSection = () => (
       <div className="max-w-2xl mx-auto text-center mb-8 sm:mb-12">
         <SectionLabel>The cost</SectionLabel>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
-          The cost of bad decisions
+          The cost of the old way to evaluate
         </h2>
         <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 sm:mb-12">
-          Failed launches. Strategy mistakes. Legal exposure. Technical debt. Lost market timing. Even with months of analysis, companies still move forward with uncertainty.
+          Unproductive meetings, six-figure strategy engagements just to test an idea, and decision delay that pushes projects back. Real numbers from US research.
         </p>
       </div>
 
@@ -131,7 +133,7 @@ const CostSection = () => (
         <div className="rounded-xl border border-border bg-card p-4 md:p-6 text-muted-foreground min-w-0">
           <CostScatterAnimated />
           <p className="text-center text-xs text-muted-foreground mt-2">
-            Impact vs scale of cost across key metrics
+            Cost of how companies evaluate before committing (sourced)
           </p>
         </div>
 
@@ -140,7 +142,7 @@ const CostSection = () => (
             The loss.
           </p>
           <p className="text-sm text-muted-foreground mt-1 max-w-md mx-auto">
-            Money, time, and opportunity — compounded when decisions lack structure and multi-perspective analysis.
+            $37B in meeting waste, $100K+ per “should we do this?” engagement, 71% of meetings adding no value, 60% of delays from slow decisions — all before a single project or consultant is fully committed.
           </p>
         </div>
       </div>
@@ -166,9 +168,9 @@ const ToolsFailSection = () => (
       <div className="max-w-2xl mx-auto text-center mb-8 sm:mb-10">
         <SectionLabel>Why current tools fail</SectionLabel>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
-          Chatbots generate answers.
+          One answer in a thread.
           <br />
-          <span className="text-muted-foreground">Decisions require reasoning.</span>
+          <span className="text-muted-foreground">Your decision needs five perspectives, tradeoffs, and a path forward.</span>
         </h2>
       </div>
       <div className="rounded-xl border border-border bg-card overflow-hidden max-w-3xl mx-auto mb-12">

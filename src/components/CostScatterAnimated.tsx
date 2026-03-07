@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 
+// Sourced: meeting waste (MeetingToll/Yaware), strategy/feasibility cost (Futurists/OGSCapital/McKinsey), unproductive meetings (71% - Insights for Professionals), decision latency (AgileIG)
 const metrics = [
-  { name: "Strategic failure", value: "$122B", label: "Lost to failed decisions", color: "hsl(var(--primary))" },
-  { name: "Meeting time", value: "40+ hrs", label: "Per major decision", color: "hsl(262 83% 58%)" },
-  { name: "Underperformance", value: "67%", label: "Initiatives fail or underperform", color: "hsl(38 92% 50%)" },
-  { name: "Delay", value: "6+ mo", label: "Analysis paralysis", color: "hsl(189 94% 43%)" },
+  { name: "Meeting waste", value: "$37B", label: "Lost annually to unproductive meetings (US)", color: "hsl(var(--primary))" },
+  { name: "Strategy evaluation", value: "$100K+", label: "Per consulting engagement to test an idea", color: "hsl(262 83% 58%)" },
+  { name: "Meetings unproductive", value: "71%", label: "Of meetings considered unproductive", color: "hsl(38 92% 50%)" },
+  { name: "Decision latency", value: "60%", label: "Of project delays from slow decisions", color: "hsl(189 94% 43%)" },
 ];
 
 // Angular zig-zag decline (loss style): start high, sharp segments down. Coords 0..100, SVG y = 0 at top.
