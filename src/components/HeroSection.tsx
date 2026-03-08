@@ -16,8 +16,11 @@ const HeroSection = () => {
             <br />
             <span className="text-primary">before you commit.</span>
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 sm:mb-10 animate-fade-in-up animation-delay-200 leading-relaxed text-balance px-1">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-3 animate-fade-in-up animation-delay-200 leading-relaxed text-balance px-1">
             Evaluate high-stakes decisions before committing to projects, consultants, or big initiatives. Aql simulates a panel of expert perspectives — financial, technical, legal, business, tax — and surfaces risks, trade-offs, and paths in minutes.
+          </p>
+          <p className="text-sm text-muted-foreground/90 max-w-xl mx-auto mb-8 sm:mb-10 animate-fade-in-up animation-delay-200 px-1">
+            We don’t replace consultants — we compress the evaluation step before you bring them in.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-300">
             <Button variant="hero" size="xl" asChild className="touch-manipulation w-full sm:w-auto min-h-[48px]">
