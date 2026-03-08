@@ -1,82 +1,29 @@
-# Welcome to your Lovable project
+# Aql — AI Decision Simulation
 
-## Project info
+Pre-consulting decision evaluation. Pressure-test high-stakes decisions before committing to projects, consultants, or big initiatives.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Run locally
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
+cd decision-compass
 npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Requires Node.js and npm ([nvm](https://github.com/nvm-sh/nvm#installing-and-updating) recommended).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Tech
 
-**Use GitHub Codespaces**
+- Vite, TypeScript, React
+- Tailwind CSS, shadcn-ui
+- Supabase (waitlist)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Deploy (Vercel)
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-**Vercel** (recommended)
-
-1. Push this repo to GitHub and import the project in [Vercel](https://vercel.com).
-2. In the project’s **Settings → Environment Variables**, add:
+1. Import this repo in [Vercel](https://vercel.com).
+2. In **Settings → Environment Variables**, add:
    - `VITE_SUPABASE_URL` — your Supabase project URL
-   - `VITE_SUPABASE_ANON_KEY` — your Supabase anon (publishable) key  
-   (See `.env.example` for the format.)
-3. Deploy. The waitlist form will write to your Supabase `waitlist` table.
-
-You can also open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click Share → Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+   - `VITE_SUPABASE_ANON_KEY` — your Supabase anon key  
+   (See `.env.example`.)
+3. Deploy. The waitlist form writes to the Supabase `waitlist` table.
