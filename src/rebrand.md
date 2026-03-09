@@ -1,21 +1,21 @@
-Update the website copy to clearly reflect Aql’s core positioning:
+Update the website copy to clearly reflect Shura’s core positioning:
 
-Aql is a pre-consulting decision evaluation platform.
+Shura is a pre-consulting decision evaluation platform.
 
 The product helps companies pressure-test high-stakes decisions before committing resources, projects, or consulting engagements.
 
-Currently the site frames Aql too generally as an AI decision tool. The messaging should instead emphasize that Aql sits before consultants, strategy projects, or large internal initiatives and helps teams quickly evaluate whether a decision is worth pursuing.
+Currently the site frames Shura too generally as an AI decision tool. The messaging should instead emphasize that Shura sits before consultants, strategy projects, or large internal initiatives and helps teams quickly evaluate whether a decision is worth pursuing.
 
 Key positioning to reflect across the website:
 
 • Companies spend weeks debating ideas internally before committing to projects.
 • Many bring in consultants just to evaluate whether something is worth exploring.
-• Aql compresses that early evaluation phase into minutes.
+• Shura compresses that early evaluation phase into minutes.
 • It simulates a panel of expert perspectives (financial, technical, legal, business, tax).
 • It surfaces risks, trade-offs, evidence gaps, and viable paths forward.
 • It helps teams decide whether to proceed, pilot, delay, or abandon a project.
 
-The messaging should communicate that Aql:
+The messaging should communicate that Shura:
 
 • does not replace consultants
 • instead helps companies evaluate ideas before investing in deeper analysis
@@ -33,7 +33,7 @@ Explain how early decision evaluation today happens through:
 • expensive early consulting work
 
 Solution section
-Present Aql as an AI decision council that simulates expert reasoning.
+Present Shura as an AI decision council that simulates expert reasoning.
 
 Use cases
 Examples:

@@ -1,4 +1,4 @@
-# Aql — AI Decision Simulation
+# Shura — AI Decision Simulation
 
 Pre-consulting decision evaluation. Pressure-test high-stakes decisions before committing to projects, consultants, or big initiatives.
 

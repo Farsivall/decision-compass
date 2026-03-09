@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { href: "#problem", label: "Problem" },
-  { href: "#introducing", label: "Introducing Aql" },
+  { href: "#introducing", label: "Introducing Shura" },
   { href: "#who", label: "Who it's for" },
   { href: "#how-it-works", label: "How it works" },
   { href: "#features", label: "Features" },
@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className="h-7 w-7 sm:h-8 sm:w-8 rounded-xl bg-primary flex items-center justify-center shadow-md">
             <span className="text-primary-foreground font-bold text-xs sm:text-sm">A</span>
           </div>
-          <span className="text-base sm:text-lg font-semibold text-foreground">Aql</span>
+          <span className="text-base sm:text-lg font-semibold text-foreground">Shura</span>
         </a>
         <div className="hidden md:flex items-center gap-8 md:gap-10">
           {navLinks.map((link) => (

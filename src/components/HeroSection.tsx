@@ -17,7 +17,7 @@ const HeroSection = () => {
             <span className="text-primary">before you commit.</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-3 animate-fade-in-up animation-delay-200 leading-relaxed text-balance px-1">
-            Evaluate high-stakes decisions before committing to projects, consultants, or big initiatives. Aql simulates a panel of expert perspectives — financial, technical, legal, business, tax — and surfaces risks, trade-offs, and paths in minutes.
+            Evaluate high-stakes decisions before committing to projects, consultants, or big initiatives. Shura simulates a panel of expert perspectives — financial, technical, legal, business, tax — and surfaces risks, trade-offs, and paths in minutes.
           </p>
           <p className="text-sm text-muted-foreground/90 max-w-xl mx-auto mb-8 sm:mb-10 animate-fade-in-up animation-delay-200 px-1">
             We don’t replace consultants — we compress the evaluation step before you bring them in.

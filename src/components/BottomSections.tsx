@@ -21,13 +21,13 @@ const ExampleSection = () => {
         <div className="text-center mb-10">
           <SectionLabel>Example decision</SectionLabel>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            See Aql in action
+            See Shura in action
           </h2>
           <p className="text-muted-foreground mb-2">
             Video walkthrough of a full decision — coming soon.
           </p>
           <p className="text-sm text-muted-foreground/90 max-w-xl mx-auto">
-            In Aql you make your own decisions and can branch out anytime; the AI recommends, you stay in control.
+            In Shura you make your own decisions and can branch out anytime; the AI recommends, you stay in control.
           </p>
         </div>
         <div className="rounded-xl border border-border bg-card overflow-hidden aspect-video flex items-center justify-center border-dashed">
@@ -74,7 +74,7 @@ const WhoSection = () => {
               For people who make high-stakes decisions
             </h2>
             <p className="text-muted-foreground mt-4 max-w-lg mx-auto text-sm">
-              Aql is built for anyone who needs multiple expert perspectives before committing.
+              Shura is built for anyone who needs multiple expert perspectives before committing.
             </p>
           </div>
 
@@ -129,7 +129,7 @@ const VisionSection = () => (
           The future of decision-making
         </h2>
         <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
-          Decisions should not rely on fragmented expertise. They should be structured, transparent, and explorable. Aql recommends; you decide and branch out. We aim to become the operating system for strategic decisions.
+          Decisions should not rely on fragmented expertise. They should be structured, transparent, and explorable. Shura recommends; you decide and branch out. We aim to become the operating system for strategic decisions.
         </p>
       </div>
     </div>
@@ -190,7 +190,7 @@ const CTASection = () => {
             Make your next decision with clarity.
           </h2>
           <p className="text-muted-foreground mb-6 sm:mb-8 text-center text-sm sm:text-base">
-            Get recommendations from five specialists — then make your own decision, branch out, or follow a suggested path. You decide; Aql supports.
+            Get recommendations from five specialists — then make your own decision, branch out, or follow a suggested path. You decide; Shura supports.
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-sm mx-auto">
             <div className="space-y-2">
@@ -238,7 +238,7 @@ const Footer = () => (
         <div className="h-6 w-6 rounded-md bg-primary flex items-center justify-center">
           <span className="text-primary-foreground font-bold text-[10px]">A</span>
         </div>
-        <span className="text-sm font-medium text-foreground">Aql</span>
+        <span className="text-sm font-medium text-foreground">Shura</span>
       </div>
       <span className="text-xs text-muted-foreground">AI Decision Simulation</span>
     </div>

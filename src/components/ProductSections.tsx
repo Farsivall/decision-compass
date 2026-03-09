@@ -9,12 +9,12 @@ const IntroducingSection = () => (
     <div className="container min-w-0">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-8">
-          <SectionLabel>Introducing Aql</SectionLabel>
+          <SectionLabel>Introducing Shura</SectionLabel>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             AI Decision Simulation
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto mb-4">
-            Aql uses your company’s context and domain-specific knowledge to evaluate a decision through five specialist perspectives simultaneously, then synthesizes the results into structured strategic options.
+            Shura uses your company’s context and domain-specific knowledge to evaluate a decision through five specialist perspectives simultaneously, then synthesizes the results into structured strategic options.
           </p>
         </div>
         <div className="text-center">
@@ -22,7 +22,7 @@ const IntroducingSection = () => (
             The AI recommends; you decide. Create your own branches, explore alternatives, or take the suggested path — the decision is always yours.
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Aql uncovers risks, surfaces tradeoffs across departments, and shows where the specialists align — so you see the full picture and the consensus in one place.
+            Shura uncovers risks, surfaces tradeoffs across departments, and shows where the specialists align — so you see the full picture and the consensus in one place.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-w-xl mx-auto">
             {["Decision summary", "Core tensions", "Three paths forward", "Ranking", "Next steps", "Decision tree"].map((item) => (
@@ -42,7 +42,7 @@ const HowItWorksSection = () => {
     { num: "01", title: "Create a project", desc: "Add context, documents, or a codebase.", icon: FileText },
     { num: "02", title: "Submit a decision", desc: "Describe the strategic question.", icon: MessageSquare },
     { num: "03", title: "Specialists evaluate", desc: "Five expert perspectives analyze the decision.", icon: Users },
-    { num: "04", title: "Explore paths forward", desc: "See recommended paths or create your own branches. You decide; Aql recommends.", icon: GitBranch },
+    { num: "04", title: "Explore paths forward", desc: "See recommended paths or create your own branches. You decide; Shura recommends.", icon: GitBranch },
   ];
 
   return (
@@ -77,7 +77,7 @@ const FeaturesSection = () => {
     { icon: Sparkles, title: "Decision evaluation", desc: "Submit a decision and get structured recommendations from five perspectives. You choose the path or branch your own.", video: evalVideo },
     { icon: GitBranch, title: "Decision tree", desc: "Visualize paths, create your own branches, and explore alternatives. The AI recommends — you choose.", video: decisionTreeVideo },
     { icon: BarChart3, title: "Persona scoring", desc: "See how each specialist evaluates the decision with detailed scoring.", video: null },
-    { icon: FileText, title: "Your context + domain knowledge", desc: "Upload your company’s documents or connect a repo. Aql uses this with legal, financial, technical, and tax expertise for analysis.", video: null },
+    { icon: FileText, title: "Your context + domain knowledge", desc: "Upload your company’s documents or connect a repo. Shura uses this with legal, financial, technical, and tax expertise for analysis.", video: null },
     { icon: Users, title: "Multi-persona analysis", desc: "Legal, financial, technical, business, and tax perspectives in one place.", video: null },
   ];
 
