@@ -15,6 +15,7 @@ const Index = () => {
       <div className="relative z-10">
         <Navbar />
       <HeroSection />
+      <CTASection />
       <WhyNowSection />
       <ProblemSection />
       <WhoSection />
@@ -25,7 +26,6 @@ const Index = () => {
       <HowItWorksSection />
       <FeaturesSection />
       <VisionSection />
-      <CTASection />
       <Footer />
       </div>
     </div>
