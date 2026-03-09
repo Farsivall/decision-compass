@@ -114,7 +114,7 @@ const BackgroundCards = () => {
       {cards.map((card, i) => (
         <div
           key={card.label}
-          className="absolute w-[260px] max-w-[calc(100vw-2rem)] will-change-[left,top]"
+          className="absolute w-[120px] sm:w-[180px] md:w-[260px] max-w-[calc(100vw-2rem)] will-change-[left,top]"
           style={{
             ...SLOT_STYLES[cardToSlot[i]],
             transition: "left 1.6s cubic-bezier(0.4, 0, 0.2, 1), top 1.6s cubic-bezier(0.4, 0, 0.2, 1), transform 1.6s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -133,49 +133,49 @@ const BackgroundCard = ({
   card: (typeof cards)[0];
 }) => {
   return (
-    <div
-      className={`rounded-xl border border-border bg-card p-4 transition-opacity duration-1000 ${
-        card.active ? "ring-1 ring-primary/30" : ""
-      }`}
-      style={{ opacity: card.opacity }}
-    >
-      <div className="flex items-center gap-3 mb-3">
+<div
+    className={`rounded-lg md:rounded-xl border border-border bg-card p-2 sm:p-3 md:p-4 transition-opacity duration-1000 ${
+      card.active ? "ring-1 ring-primary/30" : ""
+    }`}
+    style={{ opacity: card.opacity }}
+  >
+      <div className="flex items-center gap-1.5 sm:gap-3 mb-1.5 sm:mb-3">
         <div
-          className={`h-9 w-9 rounded-full ${card.iconBg} flex items-center justify-center flex-shrink-0`}
+          className={`h-5 w-5 sm:h-7 sm:w-7 md:h-9 md:w-9 rounded-full ${card.iconBg} flex items-center justify-center flex-shrink-0`}
         >
-          <span className="text-white text-xs font-semibold">{card.letter}</span>
+          <span className="text-white text-[8px] sm:text-[10px] md:text-xs font-semibold">{card.letter}</span>
         </div>
         <div className="min-w-0 flex-1">
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className="text-sm font-medium text-foreground">{card.label}</span>
+          <div className="flex items-center gap-1 sm:gap-2 flex-wrap">
+            <span className="text-[10px] sm:text-xs md:text-sm font-medium text-foreground truncate">{card.label}</span>
             {card.active && (
-              <span className="rounded-md bg-cyan-500/80 px-1.5 py-0.5 text-[10px] font-medium text-white">
+              <span className="rounded bg-cyan-500/80 px-1 py-0.5 text-[8px] sm:text-[10px] font-medium text-white">
                 Active
               </span>
             )}
           </div>
-          <p className="text-[10px] text-muted-foreground">
+          <p className="text-[8px] sm:text-[9px] md:text-[10px] text-muted-foreground hidden sm:block">
             5 dimensions - weighted scoring
           </p>
         </div>
       </div>
-      <div className="h-1.5 rounded-full bg-muted overflow-hidden mb-3">
+      <div className="h-1 sm:h-1.5 rounded-full bg-muted overflow-hidden mb-1.5 sm:mb-3">
         <div
           className={`h-full rounded-full ${card.barColor}`}
           style={{ width: `${card.barPercent}%` }}
         />
       </div>
-      <ul className="space-y-1">
+      <ul className="space-y-0.5 sm:space-y-1">
         {card.dimensions.map((d) => (
           <li
             key={d.name}
-            className="flex justify-between text-[10px] text-muted-foreground"
+            className="flex justify-between text-[8px] sm:text-[9px] md:text-[10px] text-muted-foreground"
           >
-            <span>{d.name}</span>
+            <span className="truncate mr-1">{d.name}</span>
             <span>{d.pct}</span>
           </li>
         ))}
-        <li className="text-[10px] text-muted-foreground/80 pt-0.5">
+        <li className="text-[8px] sm:text-[10px] text-muted-foreground/80 pt-0.5 hidden sm:block">
           +2 more dimensions
         </li>
       </ul>
